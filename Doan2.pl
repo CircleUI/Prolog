@@ -108,4 +108,16 @@ mother(Parent,Child):-parent(Parent,Child),female(Parent).
 child(Child,Parent):-parent(Parent,Child).
 son(Child,Parent):-parent(Parent,Child),male(Child).
 daughter(Child,Parent):-parent(Parent,Child),female(Child).
-grandparent(GP,GC):-parent(GP,parent(X,GC)).
+grandparent(GP,GC):-parent(X,GC),parent(GP,X).
+grandmother(GM,GC):-parent(X,GC),parent(GM,X),female(GM).
+grandfather(GF,GC):-parent(X,GC),parent(GF,X),male(GF).
+grandchild(GC,GP):-grandparent(GP,GC).
+grandson(GS,GP):-grandchild(GP,GS),male(GS).
+granddaughter(GD,GP):-grandchild(GP,GD),female(GD).
+sibling(Person1,Person2):-parent(X,Person1),parent(X,Person2).
+brother(Person,Sibling):-sibling(Person,Sibling),male(Person).
+sister(Person,Sibling):-sibling(Person,Sibling),female(Person).
+aunt(Person,NieceNephew):-parent(X,NieceNephew),sibling(X,Person),female(Person).
+uncle(Person,NieceNephew):-parent(X,NieceNephew),sibling(X,Person),male(Person).
+niece(Person,AuntUncle):-(aunt(AuntUncle,Person)+uncle(AuntUncle,Person)),female(Person).
+nephew(Person,AuntUncle):-(aunt(AuntUncle,Person)+uncle(AuntUncle,Person)),male(Person).
