@@ -1,0 +1,90 @@
+1/ Ai là chồng của Pricess Diana?
+    ?- husband(X,pDiana).
+    false.
+2/ Ai là cha của Prince William?
+    ?- father(X,pWilliam).
+    X = pCharles.
+3/ Ai là cô/dì của Price Harry?
+    ?- aunt(X,pHarry).
+    X = pAnne ;
+    false.
+4/ Mia Grace Tindall có phải là con của Mike Tidall không?
+    ?- child(mgTindall,mTindall).
+    true.
+5/ Cháu của Queen Elizabeth II là ai?
+    ?- grandchild(X,qElizabethII).
+    X = pWilliam ;
+    X = pHarry ;
+    X = peterPhillips ;
+    X = zPhillips ;
+    X = pBeatrice ;
+    X = pEugenie ;
+    X = jvSevern ;
+    X = llmWindsor ;
+    false.
+6/ Cháu gái của Prince Phillip là ai?
+    ?- granddaughter(X,pPhillip).
+    X = zPhillips ;
+    X = pBeatrice ;
+    X = pEugenie ;
+    X = llmWindsor ;
+    false.
+7/ Ai là con của Kate Middleton?
+    ?- child(X,kMiddleton).
+    X = pGeorge ;
+    X = pCharlotte.
+8/ Ai là ông nội của Lady Louise Mountbatten-Windsor?
+    ?- grandfather(X,llmWindsor).
+    X = pPhillip.
+9/ Sarah Ferguson có còn là vợ của Prince Andrew không?
+    ?- married(pAndrew,sFerguson).
+    false.
+10/ Con của Prince Phillip là ai?
+    ?- child(X,pPhillip).
+    X = pCharles ;
+    X = pAnne ;
+    X = pAndrew ;
+    X = pEdward.
+11/ Ai là cháu của Camilla Parker Bowles?
+    ?- grandchild(X,cpBowles).
+    false.
+12/ Ai là anh em của Prince Andrew? =========================> Sai
+    ?- sibling(X,pAndrew).
+    X = pCharles ;
+    X = pAnne ;
+    X = pAndrew ;
+    X = pEdward ;
+    false.
+13/ Ai là anh em của James Viscount Severn? =================================> Sai
+    ?- sibling(jvSevern,X).
+    X = jvSevern ;
+    X = llmWindsor ;
+    X = jvSevern ;
+    X = llmWindsor.
+14/ Ai là cha mẹ của Mia Grace Tindall?
+    ?- parent(X,mgTindall).
+    X = zPhillips ;
+    X = mTindall.
+15/ Ai là cha mẹ của Peter Phillips?
+    ?- parent(X,peterPhillips).
+    X = cmPhillips ;
+    X = pAnne.
+16/ Autumn Kelly có phải là vợ của Mike Tindall không?
+    ?- wife(aKelly,mTindall).
+    false.
+17/ Princess Beatrice có phải là con của Prince Phillip không?
+    ?- child(pBeatrice,pPhillip).
+    false.
+18/ Ai là cháu gái của Princess Anne?
+    ?- granddaughter(X,pAnne).
+    X = sPhillips ;
+    X = iPhillips ;
+    false.
+19/ Ai là cháu trai của Princess Diana?
+    ?- grandson(X,pDiana).
+    X = pGeorge ;
+    false.
+20/ Ai là cháu gái của Princess Diana?
+    ?- granddaughter(X,pDiana).
+    X = pCharlotte ;
+    false.
