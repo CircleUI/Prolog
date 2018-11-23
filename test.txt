@@ -48,14 +48,14 @@
 11/ Ai là cháu của Camilla Parker Bowles?
     ?- grandchild(X,cpBowles).
     false.
-12/ Ai là anh em của Prince Andrew? =========================> Sai
+12/ Ai là anh em của Prince Andrew?
     ?- sibling(X,pAndrew).
     X = pCharles ;
     X = pAnne ;
     X = pAndrew ;
     X = pEdward ;
     false.
-13/ Ai là anh em của James Viscount Severn? =================================> Sai
+13/ Ai là anh em của James Viscount Severn?
     ?- sibling(jvSevern,X).
     X = jvSevern ;
     X = llmWindsor ;
