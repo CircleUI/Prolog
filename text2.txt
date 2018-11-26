@@ -1,0 +1,77 @@
+﻿1. Các sinh viên của lớp cct1?
+?-sinhVienLop(X,cct1).
+X = nguyenVanA.
+2. Giáo viên chủ nhiệm của Trần Văn B là ai?
+?-chuNhiemCuaSinhVien(X,tranVanB).
+X = dangBinhPhuong.
+3. Trưởng Khoa là ai?
+?-truongKhoa(X).
+X = dongThiBichThuy.
+4. Khoa có các lớp nào?
+?-lop(X).
+X = cct1 ;
+X = cct2 ;
+X = cct3 ;
+X = cct4 ;
+X = cct5 ;
+X = cct6.
+
+5. Nguyễn Hải Thiện là sinh viên của lớp nào?
+?-sinhVienLop(nguyenHaiThien,X).
+X = cct6.
+6.Chuyên ngành Khoa học máy tính có các bộ môn nào?
+?-boMonCuaNganh(X,khoaHocMayTinh).
+X = thiGiacMayTinh ;
+X = congNgheTriThuc ;
+X = khoaHocMayTinh_bm.
+
+7. Khoa có các chuyên ngành nào?
+?-chuyenNganh(X).
+X = congNghePhanMem ;
+X = heThongThongTin ;
+X = khoaHocMayTinh ;
+X = congNgheThongTin.
+
+8. Các giáo sư của khoa?
+?-giaoSu(X).
+X = dongThiBichThuy.
+9. Các thạc sĩ của chuyên ngành Khoa học máy tính
+?-thacSiCuaNganh(X,khoaHocMayTinh).
+X = dangHoangHai ;
+X = hoLeThiKimNhung.
+10. Các giáo sư của chuyên ngành Khoa học máy tính
+?-giaoSuCuaNganh(X,khoaHocMayTinh).
+X=dongThiBichThuy.
+11. Các sinh viên theo chuyên ngành công nghê phần mềm?
+?-sinhVienTheoChuyenNganh(X,congNghePhanMem).
+X=nguyenVanA.
+12. Giáo viên Phan Hồng Duy giảng dạy Chuyên ngành nào?
+?-giaoVienThuocChuyenNganh(phanHongDuy, X).
+X=khoaHocMayTinh.
+13. Các trưởng bộ môn?
+?-truongBoMon(X,_).
+X=dangBinhPhuong.
+14. Ai có thể làm phó khoa?
+?-coTheLamPhoKhoa(X).
+false.
+15. Thầy Đặng Bình Phương có thể làm trưởng khoa được không?
+?-coTheLamTruongKhoa(dangBinhPhuong).
+false.
+16. Phó khoa là ai?
+?-phoKhoa(X).
+X = hoBaoQuoc ;
+X = chauThanhDuc.
+17. Các tiến sĩ của Ngành Hệ Thống Thông Tin.
+?-tienSiCuaNganh(X,heThongThongTin).
+X = buiTienLoc ;
+X = dangBinhPhuong .
+18. Các giáo viên của bộ môn Thị giác máy tính.
+?-giaoVien(X,thiGiacMayTinh).
+X = chauThanhDuc ;
+X = hoLeThiKimNhung.
+19.Lớp cct2 là lớp của chuyên ngành nào?
+?-lopTheoChuyenNganh(cct2, X).
+X = khoaHocMayTinh.
+20.Lớp cct2 là thuộc bộ môn nào
+?-lopTheoBoMon(cct2,X).
+X = khoaHocMayTinh_bm.
